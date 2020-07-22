@@ -10,7 +10,6 @@ def send(data):
     smtp_server = "smtp.gmail.com"
     sender_email = os.getenv("senderEmail")
     receiver_email = os.getenv("receiverEmail")
-    receiver_email2 = os.getenv("receiverEmail2")
     password = os.getenv("password")
     message = """
 {rows} """
@@ -28,7 +27,6 @@ def send(data):
         server.ehlo()  # Can be omitted
         server.login(sender_email, os.getenv("password"))
         server.sendmail(sender_email, receiver_email, msg.as_string())
-        # server.sendmail(sender_email, receiver_email2, msg.as_string())
         print("Successfully sent email")
 
 def rows(number, data):
