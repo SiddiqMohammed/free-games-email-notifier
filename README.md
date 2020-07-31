@@ -20,6 +20,8 @@ The keys can then be used by ```os.getenv("NameOfVariable")``` in the code. Whic
 
 In my case, I have saved the emails of both the user who sends and those who will be receiving. Additionally, I need the password of the sender's email.
 
+As for the web page you want to get the data from reddit provides a neat solutions, just get the url of the page you want (eg: reddit.com/r/GameDeals) and just ".json" at the end of the url (eg: reddit.com/r/GameDeals.json) and that will give you json file with the data of the page.
+
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
